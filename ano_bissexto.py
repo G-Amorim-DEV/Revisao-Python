@@ -1,11 +1,9 @@
 def calcular_ano_bissexto(ano):
-    if ano % 4 == 0 and ano % 100 == 0 and ano % 400 == 0:
-        x = print(f"O {ano} é bissexto")
-        return x 
+    if (ano % 4 == 0) and (ano % 100 != 0 or ano % 400 == 0):
+        return f"O {ano} é bissexto"
 
     else:
-        y= print(f"O {ano} não um ano é bissexto")
-        return y
+        return f"O {ano} não um ano é bissexto"
     
 
 ano = int(input("Digite um ano para verificar se ele é bissexto ou não: "))
